@@ -1,6 +1,6 @@
 {
   "name": "allidsbyid",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "Collection of functions to change objects that are in a allIds/byId shape without mutating them",
   "main": "./distribution/index.js",
   "scripts": {
