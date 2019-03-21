@@ -3,7 +3,7 @@
  * @param array
  * @param value
  */
-export default function toggleItemInArray(array, value){
+const toggleItemInArray = (array, value) => {
     const index = array.indexOf(value);
 
     let returnArray;
@@ -15,4 +15,7 @@ export default function toggleItemInArray(array, value){
     }
 
     return returnArray;
-}
+};
+
+module.exports = toggleItemInArray;
+// export default toggleItemInArray;

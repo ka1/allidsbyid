@@ -1,12 +1,11 @@
-import removeFromIdBasedObject from "./removeFromIdBasedObject";
-import addToIdBasedObjectIfNotExists from "./addToIdBasedObjectIfNotExists";
-import addToIdBasedObjectOrMerge from "./addToIdBasedObjectOrMerge";
-import addToIdBasedObjectOrOverwrite from "./addToIdBasedObjectOrOverwrite";
-import toggleItemInArray from "./toggleItemInArray";
+const removeFromIdBasedObject = require("./removeFromIdBasedObject");
+const addToIdBasedObjectIfNotExists = require("./addToIdBasedObjectIfNotExists");
+const addToIdBasedObjectOrMerge = require("./addToIdBasedObjectOrMerge");
+const addToIdBasedObjectOrOverwrite = require("./addToIdBasedObjectOrOverwrite");
+const toggleItemInArray = require("./toggleItemInArray");
 
-export {removeFromIdBasedObject,
-    addToIdBasedObjectIfNotExists,
-    addToIdBasedObjectOrMerge,
-    addToIdBasedObjectOrOverwrite,
-    toggleItemInArray
-};
+module.exports.removeFromIdBasedObject = removeFromIdBasedObject;
+module.exports.addToIdBasedObjectIfNotExists = addToIdBasedObjectIfNotExists;
+module.exports.addToIdBasedObjectOrMerge = addToIdBasedObjectOrMerge;
+module.exports.addToIdBasedObjectOrOverwrite = addToIdBasedObjectOrOverwrite;
+module.exports.toggleItemInArray = toggleItemInArray;

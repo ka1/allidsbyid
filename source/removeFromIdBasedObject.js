@@ -5,7 +5,7 @@
  * @param {string | int | array} idToRemove
  * @returns {{allIds, byId}}
  */
-export default function removeFromIdBasedObject(origObject, idToRemove){
+const removeFromIdBasedObject = (origObject, idToRemove) => {
     return {
         allIds: origObject.allIds.filter(id => {
             if (typeof idToRemove !== "object") return id !== idToRemove;
@@ -20,4 +20,6 @@ export default function removeFromIdBasedObject(origObject, idToRemove){
             return acc;
         }, {})
     };
-}
+};
+
+module.exports = removeFromIdBasedObject;

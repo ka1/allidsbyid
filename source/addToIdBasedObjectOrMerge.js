@@ -5,7 +5,7 @@
  * @param objectToAdd
  * @returns {{allIds: *[], byId: {}}}
  */
-export default function addToIdBasedObjectOrMerge(origObject, idToAdd, objectToAdd){
+const addToIdBasedObjectOrMerge = (origObject, idToAdd, objectToAdd) => {
     if (!idToAdd) {
         throw(new Error("Id not given"));
     }
@@ -22,4 +22,6 @@ export default function addToIdBasedObjectOrMerge(origObject, idToAdd, objectToA
             }
         }
     };
-}
+};
+
+module.exports = addToIdBasedObjectOrMerge;

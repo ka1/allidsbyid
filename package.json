@@ -29,15 +29,15 @@
     "transform": {
       ".*": "<rootDir>/node_modules/babel-jest"
     },
+    "transformIgnorePatterns": [
+      "<rootDir>/distribution"
+    ],
     "moduleFileExtensions": [
       "js",
       "jsx"
     ],
     "moduleDirectories": [
       "node_modules"
-    ],
-    "modulePathIgnorePatterns": [
-      "<rootDir>/distribution"
     ]
   }
 }

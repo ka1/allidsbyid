@@ -5,7 +5,7 @@
  * @param objectToAdd
  * @returns {{allIds: *[], byId: {}}}
  */
-export default function addToIdBasedObjectOrOverwrite(origObject, idToAdd, objectToAdd){
+const addToIdBasedObjectOrOverwrite = (origObject, idToAdd, objectToAdd) => {
     return {
         allIds: origObject.allIds.indexOf(idToAdd) === -1
             ? [...origObject.allIds, idToAdd]
@@ -15,4 +15,6 @@ export default function addToIdBasedObjectOrOverwrite(origObject, idToAdd, objec
             [idToAdd]: objectToAdd
         }
     };
-}
+};
+
+module.exports = addToIdBasedObjectOrOverwrite;

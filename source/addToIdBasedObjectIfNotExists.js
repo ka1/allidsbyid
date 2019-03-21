@@ -6,7 +6,7 @@
  * @param objectToAdd
  * @returns {{allIds: *[], byId: {}}}
  */
-export default function addToIdBasedObjectIfNotExists(origObject, idToAdd, objectToAdd){
+const addToIdBasedObjectIfNotExists = (origObject, idToAdd, objectToAdd) => {
     return {
         allIds: origObject.allIds.indexOf(idToAdd) === -1
             ? [...origObject.allIds, idToAdd]
@@ -15,4 +15,6 @@ export default function addToIdBasedObjectIfNotExists(origObject, idToAdd, objec
             ? {...origObject.byId, [idToAdd]: objectToAdd}
             : origObject.byId
     };
-}
+};
+
+module.exports = addToIdBasedObjectIfNotExists;
