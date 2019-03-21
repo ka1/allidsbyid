@@ -1,4 +1,4 @@
-import removeFromIdBasedObject from "../source/removeFromIdBasedObject";
+import {removeFromIdBasedObject} from "../source/index";
 
 it ("should remove multiple ids", () => {
     const theObject = {allIdsById: {allIds: [13, 14, 15], byId: {13: {test: true}, 14: {test: true}, 15: {test: true}}}};

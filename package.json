@@ -1,11 +1,15 @@
 {
   "name": "allidsbyid",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Collection of functions to change objects that are in a allIds/byId shape without mutating them",
   "main": "./distribution/index.js",
   "scripts": {
     "test": "jest",
     "build": "babel source --out-dir distribution"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ka1/allidsbyid.git"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.0",
