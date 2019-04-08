@@ -1,8 +1,9 @@
 {
   "name": "allidsbyid",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Collection of functions to change objects that are in a allIds/byId shape without mutating them",
   "main": "./distribution/index.js",
+  "types": "./types/index.d.ts",
   "scripts": {
     "test": "jest",
     "build": "babel source --out-dir distribution --extensions \".ts\"",
