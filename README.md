@@ -3,10 +3,12 @@ allidsbyid
 
 A set of functions to modify normalized objects like
 ```json
-    allIds: ["a", "b"],
-    byId: {
-      a: {value: "a"},
-      b: {value: "b", more: "b"}
+    {
+        "allIds": ["a", "b"],
+        "byId": {
+            "a": {"value": "a"},
+            "b": {"value": "b", "more": "b"}
+        }
     }
 ```
 

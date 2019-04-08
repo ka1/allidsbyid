@@ -1,9 +1,11 @@
+import {allIdsByIdObject, idElement} from "./types";
+
 /**
  * Add an item or remove it. Does NOT mutate the array.
  * @param array
  * @param value
  */
-const toggleItemInArray = (array, value) => {
+const toggleItemInArray = (array: (string | number | object)[], value: string | number | object) => {
     const index = array.indexOf(value);
 
     let returnArray;
@@ -17,5 +19,4 @@ const toggleItemInArray = (array, value) => {
     return returnArray;
 };
 
-module.exports = toggleItemInArray;
-// export default toggleItemInArray;
+export default toggleItemInArray;

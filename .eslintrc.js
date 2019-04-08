@@ -8,12 +8,10 @@ module.exports = {
         "react",
         "jest"
     ],
-    "parser": "babel-eslint",
+    "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "sourceType": "module",
-        "ecmaFeatures": {
-            "modules": true
-        }
+        "ecmaVersion": 6
     },
     "env": {
         "jest": true,

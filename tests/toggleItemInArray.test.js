@@ -1,4 +1,4 @@
-import {toggleItemInArray} from "../source/index.js";
+import {toggleItemInArray} from "../source/index";
 
 it("should add an item to an array", () => {
     expect(toggleItemInArray(["a"], "test")).toEqual(["a","test"]);

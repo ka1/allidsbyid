@@ -1,11 +1,5 @@
-import removeFromIdBasedObject from "./removeFromIdBasedObject";
-import addToIdBasedObjectIfNotExists from "./addToIdBasedObjectIfNotExists";
-import addToIdBasedObjectOrMerge from "./addToIdBasedObjectOrMerge";
-import addToIdBasedObjectOrOverwrite from "./addToIdBasedObjectOrOverwrite";
-import toggleItemInArray from "./toggleItemInArray";
-
-module.exports.removeFromIdBasedObject = removeFromIdBasedObject;
-module.exports.addToIdBasedObjectIfNotExists = addToIdBasedObjectIfNotExists;
-module.exports.addToIdBasedObjectOrMerge = addToIdBasedObjectOrMerge;
-module.exports.addToIdBasedObjectOrOverwrite = addToIdBasedObjectOrOverwrite;
-module.exports.toggleItemInArray = toggleItemInArray;
+export {default as removeFromIdBasedObject} from "./removeFromIdBasedObject";
+export {default as addToIdBasedObjectIfNotExists} from "./addToIdBasedObjectIfNotExists";
+export {default as addToIdBasedObjectOrMerge} from "./addToIdBasedObjectOrMerge";
+export {default as addToIdBasedObjectOrOverwrite} from "./addToIdBasedObjectOrOverwrite";
+export {default as toggleItemInArray} from "./toggleItemInArray";

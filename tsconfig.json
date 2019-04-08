@@ -17,10 +17,9 @@
     // https://github.com/Microsoft/TypeScript-React-Starter/issues/8
     "allowSyntheticDefaultImports": true,
     "jsx": "react"
-
   },
   "include": [
-    "./resources/assets/js"
+    "./source"
   ],
   "exclude": [
     "./node_modules"
