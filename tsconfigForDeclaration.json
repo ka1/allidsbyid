@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    // Target latest version of ECMAScript.
+    "target": "esnext",
+    // Search under node_modules for non-relative imports.
+    "moduleResolution": "node",
+    // Process & infer types from .js files.
+//    "allowJs": true,
+    // Don't emit; allow Babel to transform files.
+    "emitDeclarationOnly": true,
+    // Enable strictest settings like strictNullChecks & noImplicitAny.
+    "strict": true,
+    // Disallow features that require cross-file information for emit. (should be true, but does not work with axios)
+    "isolatedModules": true,
+    // Import non-ES modules as default imports.
+    "esModuleInterop": true,
+    // https://github.com/Microsoft/TypeScript-React-Starter/issues/8
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "declarationDir": "./types",
+    "declaration": true
+
+  },
+  "include": [
+    "./source"
+  ],
+  "exclude": [
+    "./node_modules"
+  ]
+}

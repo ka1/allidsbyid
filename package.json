@@ -1,11 +1,12 @@
 {
   "name": "allidsbyid",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Collection of functions to change objects that are in a allIds/byId shape without mutating them",
   "main": "./distribution/index.js",
   "scripts": {
     "test": "jest",
-    "build": "babel source --out-dir distribution --extensions \".ts\""
+    "build": "babel source --out-dir distribution --extensions \".ts\"",
+    "buildTypes": "tsc -p tsconfigForDeclaration.json"
   },
   "repository": {
     "type": "git",
