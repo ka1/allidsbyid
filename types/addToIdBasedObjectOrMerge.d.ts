@@ -1,4 +1,9 @@
-import { allIdsByIdObjectStrict } from "./types";
+import { allIdsByIdObjectStrictNumbered, allIdsByIdObjectStrictStringed, allIdsByIdObjectStrictStringOrNumber } from "./types";
+declare type IOverload = {
+    (origObject: allIdsByIdObjectStrictNumbered, idToAdd: number, objectToAdd: object): allIdsByIdObjectStrictNumbered;
+    (origObject: allIdsByIdObjectStrictStringed, idToAdd: string, objectToAdd: object): allIdsByIdObjectStrictStringed;
+    (origObject: allIdsByIdObjectStrictStringOrNumber, idToAdd: string | number, objectToAdd: object): allIdsByIdObjectStrictStringOrNumber;
+};
 /**
  * Adds an object to an object based on allIds and byId. If the object already exists, it will be merged.
  * @param origObject
@@ -6,10 +11,5 @@ import { allIdsByIdObjectStrict } from "./types";
  * @param objectToAdd
  * @returns {{allIds: *[], byId: {}}}
  */
-declare const addToIdBasedObjectOrMerge: (origObject: allIdsByIdObjectStrict, idToAdd: string | number, objectToAdd: object) => {
-    allIds: (string | number)[];
-    byId: {
-        [x: string]: object;
-    };
-};
+declare const addToIdBasedObjectOrMerge: IOverload;
 export default addToIdBasedObjectOrMerge;

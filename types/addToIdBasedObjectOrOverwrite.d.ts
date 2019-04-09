@@ -1,4 +1,9 @@
-import { allIdsByIdObject } from "./types";
+import { allIdsByIdObjectStringOrNumber, allIdsByIdObjectNumbered, allIdsByIdObjectStringed } from "./types";
+declare type IOverload = {
+    (origObject: allIdsByIdObjectNumbered, idToAdd: number, objectToAdd: any): allIdsByIdObjectNumbered;
+    (origObject: allIdsByIdObjectStringed, idToAdd: string, objectToAdd: any): allIdsByIdObjectStringed;
+    (origObject: allIdsByIdObjectStringOrNumber, idToAdd: string | number, objectToAdd: any): allIdsByIdObjectStringOrNumber;
+};
 /**
  * Adds an object to an object based on allIds and byId. If the object already exists, it will be overwritten.
  * @param origObject
@@ -6,10 +11,5 @@ import { allIdsByIdObject } from "./types";
  * @param objectToAdd
  * @returns {{allIds: *[], byId: {}}}
  */
-declare const addToIdBasedObjectOrOverwrite: (origObject: allIdsByIdObject, idToAdd: string | number, objectToAdd: Record<string, any>) => {
-    allIds: (string | number)[];
-    byId: {
-        [x: string]: string | number | boolean | object | any[] | Record<string, any>;
-    };
-};
+declare const addToIdBasedObjectOrOverwrite: IOverload;
 export default addToIdBasedObjectOrOverwrite;
