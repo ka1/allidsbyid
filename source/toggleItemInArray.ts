@@ -1,5 +1,3 @@
-import {allIdsByIdObject, idElement} from "./types";
-
 /**
  * Add an item or remove it. Does NOT mutate the array.
  * @param array
