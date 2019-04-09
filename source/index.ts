@@ -3,3 +3,4 @@ export {default as addToIdBasedObjectIfNotExists} from "./addToIdBasedObjectIfNo
 export {default as addToIdBasedObjectOrMerge} from "./addToIdBasedObjectOrMerge";
 export {default as addToIdBasedObjectOrOverwrite} from "./addToIdBasedObjectOrOverwrite";
 export {default as toggleItemInArray} from "./toggleItemInArray";
+export {default as mergeIdBasedObjectsOverwriting} from "./mergeIdBasedObjectsOverwriting";
