@@ -1,5 +1,5 @@
 import { allIdsByIdObjectStringOrNumber, allIdsByIdObjectNumbered, allIdsByIdObjectStringed } from "./types";
-declare type IOverload = {
+type IOverload = {
     (origObject: allIdsByIdObjectNumbered, idToRemove: number | number[]): allIdsByIdObjectNumbered;
     (origObject: allIdsByIdObjectStringed, idToRemove: string | string[]): allIdsByIdObjectStringed;
     (origObject: allIdsByIdObjectStringOrNumber, idToRemove: string | number | (string | number)[]): allIdsByIdObjectStringOrNumber;

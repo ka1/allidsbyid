@@ -16,12 +16,10 @@
     "esModuleInterop": true,
     // https://github.com/Microsoft/TypeScript-React-Starter/issues/8
     "allowSyntheticDefaultImports": true,
-    "jsx": "react"
+    "jsx": "react",
+    "skipLibCheck": true,
+    "types": []
   },
-  "include": [
-    "./source"
-  ],
-  "exclude": [
-    "./node_modules"
-  ]
+  "include": ["./source"],
+  "exclude": ["node_modules", "./node_modules", "./node_modules/*"]
 }

@@ -1,4 +1,4 @@
-declare type IOverload = {
+type IOverload = {
     (array: string[], value: string): string[];
     (array: number[], value: number): number[];
     (array: object[], value: object): object[];

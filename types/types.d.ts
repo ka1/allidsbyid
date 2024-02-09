@@ -1,4 +1,4 @@
-export declare type idElement = Record<string, any>;
+export type idElement = Record<string, any>;
 export interface allIdsByIdObjectNumbered {
     allIds: number[];
     byId: {
