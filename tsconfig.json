@@ -18,8 +18,8 @@
     "allowSyntheticDefaultImports": true,
     "jsx": "react",
     "skipLibCheck": true,
-    "types": []
+    "types": ["jest", "node"]
   },
-  "include": ["./source"],
+  "include": ["./source", "./test"],
   "exclude": ["node_modules", "./node_modules", "./node_modules/*"]
 }
